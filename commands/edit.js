@@ -2,7 +2,7 @@ const { Message } = require('discord.js');
 const { rawEmb } = require('../index')
 
 module.exports = {
-    name: 'edut',
+    name: 'edit',
     syntax: 'edit <text>',
     args: true,
     description: 'Change your server description',
