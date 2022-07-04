@@ -2,7 +2,7 @@ const fs = require("fs");
 const { join } = require("path");
 const Discord = require("discord.js");
 const { Collection, Client, MessageEmbed } = require("discord.js");
-const db = require("quick.db")
+//const db = require("quick.db")
 const client = new Client();
 const colors = {
     error: 0xF91A3C,
