@@ -2,8 +2,8 @@ const { Message } = require('discord.js');
 const { rawEmb } = require('../index')
 
 module.exports = {
-    name: 'status',
-    syntax: 'status',
+    name: 'setstatus',
+    syntax: 'setstatus',
     args: true,
     description: 'Change the bots status',
     perm: 'ADMINISTRATOR',

@@ -2,8 +2,8 @@ const { Message } = require('discord.js');
 const { rawEmb } = require('../index')
 
 module.exports = {
-    name: 'welcome',
-    syntax: 'welcome <#channel>',
+    name: 'setwelcome',
+    syntax: 'setwelcome <#channel>',
     args: true,
     description: 'Change your server welcome channel',
     perm: 'ADMINISTRATOR',

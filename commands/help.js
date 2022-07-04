@@ -16,14 +16,14 @@ module.exports = {
      */
     async execute(msg, args) {
         const { colors, emotes } = msg.client;
-        const githubLink = 'https://github.com/DragonCat4012/Bump-Bot'
+       const githubLink = 'https://github.com/DragonCat4012/Bump-Bot'
         let emb = rawEmb(msg)
             .setAuthor(msg.author.tag, msg.author.displayAvatarURL())
 
         if (args[0]) {
             var command = msg.client.commands.find(cmd => cmd.commands.includes(args[0].toLowerCase()));
             if (!command) {
-                emb.setTitle("Command not found qwq")
+                emb.setTitle("Command not found.")
                 return msg.channel.send(emb);
             }
             emb.setTitle(command.name)
@@ -38,7 +38,7 @@ module.exports = {
                 let command = cmd[1]
                 A.push(`• **${command.name}** \`%${command.syntax}\`\n ----------------------------------\n`)
             }
-            emb.setDescription(A.join(" ") + `\n [Github](${githubLink})`)
+            emb.setDescription(A.join(" ") + `\n ServerMater`)
                 .setTitle('My Commands')
             msg.channel.send(emb.setFooter(`Type %help <command> for more || ${A.length} Commands`));
         }

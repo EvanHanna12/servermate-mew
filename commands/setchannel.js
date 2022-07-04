@@ -2,12 +2,12 @@ const { Message } = require('discord.js');
 const { rawEmb } = require('../index')
 
 module.exports = {
-    name: 'goodbye',
-    syntax: 'goodbye <#channel>',
+    name: 'setchannel',
+    syntax: 'setchannel <#channel>',
     args: true,
-    description: 'Change your server goodbye channel',
+    description: 'Change your server advertisment channel',
     perm: 'ADMINISTRATOR',
-    commands: ['goodbye', 'setgoodbye'],
+    commands: ['channel', 'setchannel'],
 
     /**
      *@document
@@ -26,9 +26,9 @@ module.exports = {
         }
 
         let guild = await msg.client.database.server_cache.getGuild(msg.guild.id)
-        guild.gb = channel.id;
+        guild.channel = channel.id;
         await guild.save()
 
-        return msg.channel.send(emb.setDescription("**Changed goodbye Channel succesfully to:** \n <#" + channel + ">").setColor(colors.success))
+        return msg.channel.send(emb.setDescription("**Changed add Channel succesfully to:** \n <#" + channel + ">").setColor(colors.success))
     }
 };
