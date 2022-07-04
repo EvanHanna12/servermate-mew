@@ -1,0 +1,29 @@
+{
+    "name": "bump-bot",
+    "version": "1.0.0",
+    "description": "Bump Bot",
+    "main": "index.js",
+    "readme": "./README.md",
+    "repository": {
+        "url": "https://github.com/DragonCat4012/Bump-Bot"
+    },
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "engines": {
+        "node": "12.x.x"
+    },
+    "dependencies": {
+        "discord.js": "^12.5.1",
+        "parse-ms": "^2.1.0",
+        "sequelize": "^6.3.5",
+        "sqlite3": "^5.0.0"
+    },
+    "optionalDependencies": {
+        "dotenv": "^8.2.0"
+    }
+}
