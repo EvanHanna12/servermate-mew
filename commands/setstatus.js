@@ -7,7 +7,7 @@ module.exports = {
     args: true,
     description: 'Change the bots status',
     perm: 'ADMINISTRATOR',
-    commands: ['status'],
+    commands: ['setstatus'],
 
     /**
      *@document
