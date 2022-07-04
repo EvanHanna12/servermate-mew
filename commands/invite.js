@@ -22,8 +22,7 @@ module.exports = {
 
         let emb = rawEmb()
             .setTitle("Invite Links")
-            .addField("**Bot-Invite**", `[Klick](${link})`)
-            .addField("**Support Server**", `[Klick](${invite})`)
+            .addField("**Bot-Invite**", `[Click](${link})`)
         msg.channel.send(emb);
     }
 };
