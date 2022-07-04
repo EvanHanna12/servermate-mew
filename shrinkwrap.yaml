@@ -1,6 +1,7 @@
 dependencies:
   discord.js: 12.5.3
   parse-ms: 2.1.0
+  quick.db: 9.0.5
   sequelize: 6.21.2
   sqlite3: 5.0.8
 optionalDependencies:
@@ -764,6 +765,12 @@ packages:
     optional: true
     resolution:
       integrity: sha512-y+WKFlBR8BGXnsNlIHFGPZmyDf3DFMoLhaflAnyZgV6rG6xu+JwesTo2Q9R6XwYmtmwAFCkAk3e35jEdoeh/3g==
+  /quick.db/9.0.5:
+    dependencies:
+      lodash: 4.17.21
+    dev: false
+    resolution:
+      integrity: sha512-IJ5T2wTh+AKJIo7dJG9m6ucXoLd9oHsANgMZH0b4lzYQNLtCD25H0ImNLhsRRee8Y0ZVlOzg23fh/P8zrrEHhw==
   /readable-stream/3.6.0:
     dependencies:
       inherits: 2.0.4
@@ -1041,5 +1048,6 @@ specifiers:
   discord.js: ^12.5.1
   dotenv: ^8.2.0
   parse-ms: ^2.1.0
+  quick.db: ^9.0.5
   sequelize: ^6.3.5
   sqlite3: ^5.0.0
